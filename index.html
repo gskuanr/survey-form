@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Survey</title>
+</head>
+<body>
+    <h1 id="title">tinDog Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform.</p>
+    <form id="survey-form" action="/" method="post">
+        <label id="name-label" for="name">Name</label><br>
+        <input type="text" name="Name" id="name" placeholder="Enter your name" required><br>  
+        <label id="email-label" for="email">Email</label><br>  
+        <input type="email" name="Email" id="email" placeholder="Enter your Email" required><br>  
+        <label id="number-label" for="number">Age</label><br>  
+        <input type="number" name="Age" id="number" placeHolder="Age"><br>  
+        <label for="role">Which option best describes your current role?</label><br>  
+        <select name="role" id="role" required>
+            <option value="" disabled selected hidden>Select your role</option>
+            <option value="stuent">Student</option>            
+            <option value="Full Time job">Full Time job</option>
+            <option value="Full Tiem learner">Full Time learner</option>
+            <option value="other">Other</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+        </select><br>
+        <p>Would you recommend tinDog to your friend ?</p>
+        <input type="radio" name="definitely" id="definitely">
+        <label for="definitely">Definitely</label><br>
+        <input type="radio" name="maybe" id="maybe">
+        <label for="maybe">May be</label><br>
+        <input type="radio" name="notsure" id="notsure">
+        <label for="notsure">Not Sure</label><br>
+
+    </form>
+</body>
+</html>
