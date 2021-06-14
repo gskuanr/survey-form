@@ -16,24 +16,50 @@
         <label id="email-label" for="email">Email</label><br>  
         <input type="email" name="Email" id="email" placeholder="Enter your Email" required><br>  
         <label id="number-label" for="number">Age</label><br>  
-        <input type="number" name="Age" id="number" placeHolder="Age"><br>  
+        <input type="number" name="Age" id="number" placeHolder="Age"><br>
+
         <label for="role">Which option best describes your current role?</label><br>  
-        <select name="role" id="role" required>
-            <option value="" disabled selected hidden>Select your role</option>
-            <option value="stuent">Student</option>            
+        <select name="role" id="dropdown" required>
+            <option value="" disabled selected hidden>Select current role</option>
+            <option value="student">Student</option>            
             <option value="Full Time job">Full Time job</option>
-            <option value="Full Tiem learner">Full Time learner</option>
+            <option value="Full Time learner">Full Time learner</option>
             <option value="other">Other</option>
             <option value="Prefer not to say">Prefer not to say</option>
         </select><br>
-        <p>Would you recommend tinDog to your friend ?</p>
-        <input type="radio" name="definitely" id="definitely">
+
+        <label for="">Would you recommend tinDog to your friend?</label><br>
+        <input type="radio" name="name" id="definitely" >
         <label for="definitely">Definitely</label><br>
-        <input type="radio" name="maybe" id="maybe">
+        <input type="radio" name="name" id="maybe">
         <label for="maybe">May be</label><br>
-        <input type="radio" name="notsure" id="notsure">
+        <input type="radio" name="name" id="notsure">
         <label for="notsure">Not Sure</label><br>
 
+        <label for="fav-feature">What is your favorite feature on tinDog ?</label><br>
+        <select name="fav-feature" id="fav-feature" required>
+            <option value="" disabled selected hidden >Select an option </option>
+            <option value="functionality"  >Functionality</option>
+            <option value="community"  >Community</option>
+            <option value="options"  >Options</option>
+        </select><br>
+
+        <label for="update">What would you like to see improved?</label><br>
+        <input type="checkbox" name="option1" id="option1">
+        <label for="option1">Features</label><br>
+        <input type="checkbox" name="option2" id="otion2">
+        <label for="option2">Front-end</label><br>
+        <input type="checkbox" name="option3" id="option3">
+        <label for="option3">Back-end</label><br>
+        <input type="checkbox" name="option4" id="option4">
+        <label for="option4">Forums</label><br>
+        <input type="checkbox" name="option5" id="option5">
+        <label for="option5">Meet ups</label><br>
+
+        <label for="suggestions">Any comments or suggestions?</label><br>
+        <textarea name="" id="suggestions" cols="30" rows="4"></textarea><br>
+
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
