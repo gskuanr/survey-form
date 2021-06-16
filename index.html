@@ -8,58 +8,95 @@
     <title>Survey</title>
 </head>
 <body>
-    <h1 id="title">tinDog Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform.</p>
+<div class="Container">
+    <header class="Header">
+        <h1 id="title">tinDog Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform.</p>
+    </header>
+    
     <form id="survey-form" action="/" method="post">
-        <label id="name-label" for="name">Name</label><br>
-        <input type="text" name="Name" id="name" placeholder="Enter your name" required><br>  
-        <label id="email-label" for="email">Email</label><br>  
-        <input type="email" name="Email" id="email" placeholder="Enter your Email" required><br>  
-        <label id="number-label" for="number">Age</label><br>  
-        <input type="number" name="Age" id="number" placeHolder="Age"><br>
-
-        <label for="role">Which option best describes your current role?</label><br>  
-        <select name="role" id="dropdown" required>
-            <option value="" disabled selected hidden>Select current role</option>
-            <option value="student">Student</option>            
-            <option value="Full Time job">Full Time job</option>
-            <option value="Full Time learner">Full Time learner</option>
-            <option value="other">Other</option>
-            <option value="Prefer not to say">Prefer not to say</option>
-        </select><br>
-
-        <label for="">Would you recommend tinDog to your friend?</label><br>
-        <input type="radio" name="name" id="definitely" >
-        <label for="definitely">Definitely</label><br>
-        <input type="radio" name="name" id="maybe">
-        <label for="maybe">May be</label><br>
-        <input type="radio" name="name" id="notsure">
-        <label for="notsure">Not Sure</label><br>
-
-        <label for="fav-feature">What is your favorite feature on tinDog ?</label><br>
-        <select name="fav-feature" id="fav-feature" required>
-            <option value="" disabled selected hidden >Select an option </option>
-            <option value="functionality"  >Functionality</option>
-            <option value="community"  >Community</option>
-            <option value="options"  >Options</option>
-        </select><br>
-
-        <label for="update">What would you like to see improved?</label><br>
-        <input type="checkbox" name="option1" id="option1">
-        <label for="option1">Features</label><br>
-        <input type="checkbox" name="option2" id="otion2">
-        <label for="option2">Front-end</label><br>
-        <input type="checkbox" name="option3" id="option3">
-        <label for="option3">Back-end</label><br>
-        <input type="checkbox" name="option4" id="option4">
-        <label for="option4">Forums</label><br>
-        <input type="checkbox" name="option5" id="option5">
-        <label for="option5">Meet ups</label><br>
-
-        <label for="suggestions">Any comments or suggestions?</label><br>
-        <textarea name="" id="suggestions" cols="30" rows="4"></textarea><br>
-
-        <button type="submit">Submit</button>
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label><br>
+            <input class="form-control" type="text" name="Name" id="name" placeholder="Enter your name" required><br> 
+        </div>         
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label><br>  
+            <input class="form-control" type="email" name="Email" id="email" placeholder="Enter your Email" required><br> 
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="number">Age</label><br>  
+            <input class="form-control" type="number" name="Age" id="number" placeHolder="Age"><br>            
+        </div>
+        <div class="form-group">
+            <p>Which option best describes your current role?</p><br>  
+            <select name="role" id="dropdown" class="form-control" required>
+                <option value="" disabled selected value>Select current role</option>
+                <option value="student">Student</option>            
+                <option value="Full Time job">Full Time job</option>
+                <option value="Full Time learner">Full Time learner</option>
+                <option value="other">Other</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+            </select><br>
+        </div>
+        <div class="form-group">
+            <p>Would you recommend tinDog to your friend?</p><br>
+            <label for="definitely">
+                <input type="radio" name="name" class="input-radio" id="definitely" >
+                Definitely
+            </label>
+            <label for="maybe">
+                <input type="radio" name="name" class="input-radio" id="maybe">
+                May be
+            </label>
+            <label for="not-sure">
+                <input type="radio" name="name" class="input-radio" id="notsure">
+                Not Sure
+            </label>
+            
+        </div>
+        <div class="form-group">
+            <p>What is your favorite feature on tinDog ?</p><br>
+            <select name="fav-feature" id="fav-feature" class="form-control" required>
+                <option value="" disabled selected value >Select an option </option>
+                <option value="functionality"  >Functionality</option>
+                <option value="community"  >Community</option>
+                <option value="options"  >Options</option>
+            </select><br>
+        </div>
+        <div class="form-group">
+            <p>What would you like to see improved?</p><br>
+            
+            
+            <label for="option1">
+                <input type="checkbox" class="input-checkbox" name="option1" id="option1">
+                Features
+            </label>            
+            <label for="option2">
+                <input type="checkbox" class="input-checkbox" name="option2" id="otion2">
+                Front-end
+            </label>
+            <label for="option3">
+                <input type="checkbox" class="input-checkbox" name="option3" id="option3">
+                Back-end
+            </label>
+            <label for="option4">
+                <input type="checkbox" class="input-checkbox" name="option4" id="option4">
+                Forums
+            </label>
+            <label for="option5">
+                <input type="checkbox" class="input-checkbox" name="option5" id="option5">
+                Meet ups
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Any comments or suggestions?</p><br>
+            <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here ..."></textarea><br>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+        
     </form>
+</div>
 </body>
 </html>
